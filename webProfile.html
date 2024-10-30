@@ -1,127 +1,96 @@
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
-    />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group-9 Profile</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+    .hover-scale:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s;
+    }
+    .hover-bg:hover {
+      background-color: #004080; 
+      transition: background-color 0.2s;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 text-[#1C160C]">
+  <div class="min-h-screen flex flex-col justify-between">
+    <header class="bg-white shadow-md py-4">
+      <div class="container mx-auto flex items-center justify-between px-6">
+        <div class="flex items-center gap-3">
+          <div class="size-4 text-[#004080]"> 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-5 h-5">
+              <path d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z"/>
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold tracking-tight text-[#004080]">Web Profile Group - 9</h2>
+        </div>
+        <nav class="flex items-center space-x-8">
+          <a href="#" class="text-sm font-medium hover:underline text-[#004080]">Dashboard</a> 
+          <a href="#" class="text-sm font-medium hover:underline text-[#004080]">Profile</a> 
+          <a href="#" class="text-sm font-medium hover:underline text-[#004080]">Descriptions</a> 
+          <!-- <a href="#" class="text-sm font-medium hover:underline text-[#004080]">Payments</a> 
+          <a href="#" class="text-sm font-medium hover:underline text-[#004080]">Complaints</a> 
+          <a href="#" class="text-sm font-medium hover:underline text-[#004080]">Support</a>  -->
+        </nav>
+        <div class="flex items-center space-x-4">
+          <button class="px-4 py-2 bg-[#004080] text-white rounded-full text-sm font-bold leading-normal tracking-wide hover:bg-[#003366]">Edit</button> <!-- Navy color -->
+          <div class="w-10 h-10 rounded-full bg-cover bg-center" style="background-image: url('src/assets/images/zgProfile.jpg');"></div>
+        </div>
+      </div>
+    </header>
 
-    <title>Group-9</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#1C160C]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
-              </svg>
-            </div>
-            <h2 class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em]">Web Profile Group - 9</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#1C160C] text-sm font-medium leading-normal" href="#">Dashboard</a>
-              <a class="text-[#1C160C] text-sm font-medium leading-normal" href="#">Account</a>
-              <a class="text-[#1C160C] text-sm font-medium leading-normal" href="#">Mobile</a>
-              <a class="text-[#1C160C] text-sm font-medium leading-normal" href="#">Payments</a>
-              <a class="text-[#1C160C] text-sm font-medium leading-normal" href="#">Complaints</a>
-              <a class="text-[#1C160C] text-sm font-medium leading-normal" href="#">Support</a>
-            </div>
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">Edit</span>
-            </button>
-            <div
-              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/9343d321-ef89-4301-861c-a527936647df.png");'
-            ></div>
-          </div>
-        </header>
-        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col w-80">
-            <div class="flex p-4 @container">
-              <div class="flex w-full flex-col gap-4 items-start">
-                <div class="flex gap-4 flex-col items-start">
-                  <div
-                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
-                    style='background-image: url("https://cdn.usegalileo.ai/stability/95430467-c646-49e5-af6e-1801ebdc187c.png");'
-                  ></div>
-                  <div class="flex flex-col justify-center">
-                    <p class="text-[#1C160C] text-[22px] font-bold leading-tight tracking-[-0.015em]">Zidan Gimnastiar</p>
-                    <p class="text-[#A18249] text-base font-normal leading-normal">087729292929</p>
-                    <p class="text-[#A18249] text-base font-normal leading-normal">zidane29@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="pb-3">
-              <div class="flex border-b border-[#E9DFCE] px-4 justify-between">
-                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#019863] text-[#1C160C] pb-[13px] pt-4 flex-1" href="#">
-                  <p class="text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]">My xPay accounts</p>
-                </a>
-                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#A18249] pb-[13px] pt-4 flex-1" href="#">
-                  <p class="text-[#A18249] text-sm font-bold leading-normal tracking-[0.015em]">My bills</p>
-                </a>
-              </div>
-            </div>
-            <div class="flex justify-stretch">
-              <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-end">
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#F4EFE6] text-[#1C160C] text-base font-bold leading-normal tracking-[0.015em]"
-                >
-                  <span class="truncate">Block account</span>
-                </button>
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-transparent text-[#1C160C] text-base font-bold leading-normal tracking-[0.015em]"
-                >
-                  <span class="truncate">Unblock account</span>
-                </button>
-              </div>
-            </div>
-            <div class="flex justify-stretch">
-              <div class="flex flex-1 gap-3 max-w-[480px] flex-col items-stretch px-4 py-3">
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#019863] text-[#FFFFFF] text-base font-bold leading-normal tracking-[0.015em] w-full"
-                >
-                  <span class="truncate">Phone bill</span>
-                </button>
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#F4EFE6] text-[#1C160C] text-base font-bold leading-normal tracking-[0.015em] w-full"
-                >
-                  <span class="truncate">Internet Bill</span>
-                </button>
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#019863] text-[#FFFFFF] text-base font-bold leading-normal tracking-[0.015em] w-full"
-                >
-                  <span class="truncate">HSBC card</span>
-                </button>
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#F4EFE6] text-[#1C160C] text-base font-bold leading-normal tracking-[0.015em] w-full"
-                >
-                  <span class="truncate">Income tax</span>
-                </button>
-              </div>
-            </div>
+    <main class="flex-grow container mx-auto py-8 px-6">
+      <div class="grid lg:grid-cols-3 gap-6">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <div class="text-center">
+            <div class="w-32 h-32 rounded-full bg-cover bg-center mx-auto mb-4" style="background-image: url('src/assets/images/zdng.jpg');"></div>
+            <h3 class="text-xl font-bold">Zidan Gimnastiar</h3>
+            <p class="text-sm text-gray-500">087729292929</p>
+            <p class="text-sm text-gray-500">zidane29@gmail.com</p>
           </div>
         </div>
-        <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <p class="text-[#A18249] text-base font-normal leading-normal">GROUP-9</p>
-            </footer>
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="text-center">
+              <div class="w-32 h-32 rounded-full bg-cover bg-center mx-auto mb-4" style="background-image: url('src/assets/images/utar.jpg');"></div>
+              <h3 class="text-xl font-bold">Ratu Cahya Haliza</h3>
+              <p class="text-sm text-gray-500">087729877654</p>
+              <p class="text-sm text-gray-500">ratu69@gmail.com</p>
+            </div>
           </div>
-        </footer>
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="text-center">
+              <div class="w-32 h-32 rounded-full bg-cover bg-center mx-auto mb-4" style="background-image: url('src/assets/images/toto.jpg');"></div>
+              <h3 class="text-xl font-bold">Alfitho Juliansyah</h3>
+              <p class="text-sm text-gray-500">087778787878</p>
+              <p class="text-sm text-gray-500">toto78@gmail.com</p>
+            </div>
+          </div>
+        <div class="lg:col-span-3 bg-white shadow-lg rounded-lg p-6">
+          <div class="border-b border-gray-200 mb-4">
+            <ul class="flex space-x-6">
+              <li class="border-b-4 border-[#004080] pb-2 text-[#004080] font-bold">My xPay Accounts</li>
+              <li class="pb-2 text-gray-500 hover:text-[#004080] hover:border-b-4 hover:border-[#004080]">My Bills</li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <button class="w-full py-3 bg-[#004080] text-white rounded-lg font-bold hover:bg-[#003366]">Phone Bill</button>
+            <button class="w-full py-3 bg-gray-100 text-[#1C160C] rounded-lg font-bold hover:bg-gray-200">Internet Bill</button>
+            <button class="w-full py-3 bg-[#004080] text-white rounded-lg font-bold hover:bg-[#003366]">HSBC Card</button>
+            <button class="w-full py-3 bg-gray-100 text-[#1C160C] rounded-lg font-bold hover:bg-gray-200">Income Tax</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </body>
+    </main>
+
+    <footer class="bg-white py-6 text-center shadow-inner">
+      <p class="text-gray-500 text-sm font-normal">GROUP-9</p>
+    </footer>
+  </div>
+</body>
 </html>
